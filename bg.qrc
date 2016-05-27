@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/bg">
+        <file>red.JPG</file>
+        <file>blue.JPG</file>
+        <file>button.JPG</file>
+        <file>Aimer（エメ）「LAST - STARDUST」.mp3</file>
+        <file>Japanese_drum1.mp3</file>
+        <file>small_drum1.mp3</file>
+        <file>red_hit.mp3</file>
+    </qresource>
+</RCC>
