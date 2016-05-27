@@ -11,6 +11,7 @@
 
 class Target:public QWidget,public Ball{
 
+
 public:
     Target();
     //void keyPressEvent(QKeyEvent *event);
@@ -25,11 +26,11 @@ private:
     QLabel *myLabel;
     QVBoxLayout *mainLayout;
     int now_score=0;
-
-
-
     QMediaPlayer *red_hit = new QMediaPlayer();
     QMediaPlayer *blue_hit = new QMediaPlayer();
+
+
+
 };
 
 #endif // TARGET_H

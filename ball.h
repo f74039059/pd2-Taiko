@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QPropertyAnimation>
 #include <QMediaPlayer>
+#include <QPushButton>
 
 class Ball: public QObject
 {
@@ -21,19 +22,22 @@ public:
     int red_all=0,blue_all=0;
     int now_red=0,now_blue=0;
     int now_time=120;
+    QPushButton *restart;
 
 
 public slots:
     void countDown();
     void createBall();
     void deleteBall();
+    //void replay();
 private:
     void stopGame();
+    int randomBall();
+
      QMediaPlayer *music = new QMediaPlayer();
      QTimer *timer_clock;
      QTimer *timer_create;
      QTimer *timer_delete;
-     int randomBall();
      int color;
      QLabel *TL;
      QLabel *remainTime;

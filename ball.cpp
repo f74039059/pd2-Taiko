@@ -6,6 +6,8 @@
 #define WIDTH_F   751
 #define HEIGHT_F 371
 using namespace std;
+#include "target.h"
+
 Ball::Ball()
 {
     form->setWindowTitle("Hello, Qt!");
@@ -50,6 +52,13 @@ Ball::Ball()
     music->setVolume(50);
     music->play();
 
+
+    restart = new QPushButton;
+    restart = new QPushButton("Restart",form);
+    restart->setFont(QFont("Courier New", 25, QFont::Bold));
+    restart->setGeometry(250, 250, 180, 70);
+    restart->show();
+   // QObject::connect(restart, SIGNAL(clicked()), this, SLOT(replay()));
 }
 
 int Ball::randomBall()
@@ -135,6 +144,7 @@ void Ball::deleteBall()
 
 
 }
+
 
 void Ball::stopGame()
 {

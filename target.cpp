@@ -1,7 +1,7 @@
 #include "target.h"
 #include <iostream>
 using namespace std;
-
+#include "restart.h"
 
 Target::Target()
 {
@@ -19,10 +19,12 @@ Target::Target()
     score->setGeometry(50, 50, 300, 70);
     score->show();
 
-    //123
-    myLabel = new QLabel("LABEL");
+
+
+
+
+    //12456
     mainLayout = new QVBoxLayout;
-    mainLayout->addWidget(myLabel);
     mainLayout->addWidget(form);
     setLayout(mainLayout);//have reaction to keypress
 
